@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+          <nav>
+            <div class="circle">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="circle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+          </nav>
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4BqkRpWtxb75EUYI4MD4Z_5opkEBZoboyA&usqp=CAU" class="song-img">
+
+          <h1>Leke Prabhu Ka Naam</h1>
+          <p>Arijit,Nikita</p>
+
+          <audio  id="song">
+          <source src="Leke Prabhu Ka Naam Tiger 3 128 Kbps.mp3" type="audio/mpeg">
+          </audio>
+
+          <input type="range" value="0" id="progress">
+
+          <div class="controls">
+            <div><i class="fa fa-fast-backward" aria-hidden="true"></i></div>
+            <div onclick="playPause()"><i class="fa fa-play" id="ctrlIcon" aria-hidden="true"></i></div>
+            <div><i class="fa fa-fast-forward" aria-hidden="true"></i></div>
+          </div>
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
